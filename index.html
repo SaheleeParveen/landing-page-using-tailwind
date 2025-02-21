@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dreamland</title>
+
+    <!-- <link rel="stylesheet" href="listing-style.css" type=""> -->
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+
+</head>
+<body>
+
+
+  <header id="header" class="bg-black top-0 left-0 w-full z-50 transition-all duration-300">
+    <div class="container mx-auto px-4">
+      <div class="flex items-center justify-between p-6">
+        <!-- Logo -->
+        <div class="w-[20%] text-white text-xl font-bold">Logo</div>
+  
+        <!-- Desktop Navigation -->
+        <nav class="w-[60%] hidden md:hidden lg:flex items-center justify-end space-x-6">
+          <ul class="flex items-center justify-evenly space-x-6">
+            <li><a href="#" class="text-xl text-stone-50 hover:text-orange-400 duration-300 hover:-translate-y-1">Home</a></li>
+            <li><a href="#" class="text-xl text-stone-50 hover:text-orange-400 duration-300 hover:-translate-y-1">About</a></li>
+            <li><a href="#" class="text-xl text-stone-50 hover:text-orange-400 duration-300 hover:-translate-y-1">Blogs</a></li>
+            <li><a href="#" class="text-xl text-stone-50 hover:text-orange-400 duration-300 hover:-translate-y-1">Services</a></li>
+            <li><a href="#" class="text-xl text-stone-50 hover:text-orange-400 duration-300 hover:-translate-y-1">Contact</a></li>
+          </ul>
+        </nav>
+  
+        <!-- Desktop Icons -->
+        <div class="w-[20%] hidden md:hidden lg:flex items-center justify-end space-x-4">
+          <a href="#"><i class="fa-solid fa-search text-xl text-stone-50 hover:text-orange-400 duration-300 hover:-translate-y-1"></i></a>
+          <a href="#"><i class="fa-solid fa-user text-xl text-stone-50 hover:text-orange-400 duration-300 hover:-translate-y-1"></i></a>
+        </div>
+  
+        <!-- Mobile Menu Button -->
+        <div class="text-center md:block lg:hidden">
+          <button class="p-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-300" type="button" data-drawer-target="drawer-right-example" data-drawer-show="drawer-right-example" data-drawer-placement="right" aria-controls="drawer-right-example">
+            <svg class="w-6 h-6 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h10"/>
+            </svg>
+          </button>
+        </div>
+  
+        <!-- Drawer Menu -->
+        <div id="drawer-right-example" class="fixed top-0 right-0 z-40 h-screen p-4 overflow-y-auto transition-transform translate-x-full bg-black/60 backdrop-blur-sm w-80" tabindex="-1" aria-labelledby="drawer-right-label">
+          <!-- Close button -->
+          <button type="button" data-drawer-hide="drawer-right-example" aria-controls="drawer-right-example" class="text-gray-400 bg-transparent hover:bg-gray-500/30 transition-all duration-300 rounded-lg text-sm w-10 h-10 absolute top-2.5 end-2.5 inline-flex items-center justify-center">
+            <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+            </svg>
+            <span class="sr-only">Close menu</span>
+          </button>
+  
+          <!-- Drawer Navigation Links -->
+          <div class="mt-6 space-y-4">
+            <a href="#" class="block px-4 py-2 text-white hover:bg-gray-200/50 rounded-lg transition-all duration-300">Home</a>
+            <a href="#" class="block px-4 py-2 text-white hover:bg-gray-200/50 rounded-lg transition-all duration-300">About</a>
+            <a href="#" class="block px-4 py-2 text-white hover:bg-gray-200/50 rounded-lg transition-all duration-300">Services</a>
+            <a href="#" class="block px-4 py-2 text-white hover:bg-gray-200/50 rounded-lg transition-all duration-300">Blogs</a>
+            <a href="#" class="block px-4 py-2 text-white hover:bg-gray-200/50 rounded-lg transition-all duration-300">Contact</a>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </header>
+  
+    
+    
+
+    <!-- nav end -->
+
+
+
+
+    <!-- hero section start -->
+
+
+    <section class="bg-[url('assets/img/banner-img.png')] bg-cover bg-center flex items-center py-[30px] md:py-[40px] lg:py-[50px] xl:py-[60px] 2xl:py-[70px]"> 
+      <div class="container mx-auto px-4">
+          <div class="w-full text-left mx-auto py-32">
+              <h1 class="text-[50px] md:text-[50px] lg:text-[50px] font-semibold text-white mb-6 leading-tight md:leading-none lg:leading-none">Welcome to <br class="block md:hidden lg:hidden">Dreamland</h1>
+              <p class="text-lg md:text-xl text-white max-w-lg md:max-w-xl mb-10 leading-tight">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel placerat metus, id fringilla neque. Donec euismod velit vel massa dignissim, ut placerat lectus ullamcorper.
+              </p>
+              <a href="#" class="inline-block bg-orange-900 px-6 py-3 md:px-8 md:py-4 rounded-lg hover:bg-orange-700 text-white duration-500 hover:drop-shadow-2xl">
+                  Discover Now
+              </a>
+          </div>
+      </div>
+    </section>
+  
+
+
+    <!-- hero section end -->
+
+
+    <!-- about us start -->
+
+    <section class="bg-[#FFF] py-12">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-wrap justify-between items-center">
+          <div class="w-full md:w-[50%] lg:w-[50%] mb-8 md:mb-0">
+            <div class="flex items-center gap-y-1 lg:gap-x-4 md:gap-x-0 gap-x-0 mb-2 md:mb-0 lg:mb-4">
+              <h2 class="text-3xl md:text-3xl lg:text-5xl font-bold text-gray-900">About Us</h2>
+              <div class="w-20 h-[1px] bg-gray-600 hidden md:hidden lg:block"></div>
+            </div>
+            <h4 class="text-lg md:text-2xl font-semibold text-gray-700 mb-4 md:mb-2 lg:mb-4">What We Actually Do</h4>
+            <p class="text-gray-600 text-base leading-tight md:leading-tight lg:leading-relaxed">
+              It is a long established fact that a reader will be distracted by the readable<br class="hidden md:hidden lg:block"> content of a page when looking at its layout. The point of using Lorem Ipsum is<br class="hidden md:hidden lg:block"> that it has a more-or-less normal distribution of letters.
+            </p>
+            <a href="#" class="inline-block bg-orange-900 mt-5 px-6 py-3 md:px-8 md:py-4 rounded-lg hover:bg-orange-700 text-white duration-500 hover:drop-shadow-2xl">
+              Discover Now
+          </a>
+          </div>
+    
+          <div class="w-full md:w-[50%] lg:w-[50%]">
+            <img src="assets/img/abt-img.png" alt="Team working together" class="w-full h-auto object-cover rounded-[20px] md:rounded-[20px] lg:rounded-[50px] shadow-lg">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- about us end -->
+
+
+    <!-- services start -->
+
+
+    <section class="bg-[#F9F9F9] py-12">
+        <div class="container mx-auto px-4">
+          <div class="flex items-center gap-y-1 lg:gap-x-2 md:gap-x-0 gap-x-0 mb-2 md:mb-0 lg:mb-4 overflow-hidden">
+            <div class="panel active" style="background-image: url(./assets/img/listing-one.png)">
+              <div class="p-content absolute top-[50%] left-[0%] lg:translate-x-[15%] md:translate-x-[5%] translate-x-[0%] translate-y-[-50%] p-2 text-white opacity-0 transition-opacity duration-500 ease-in-out">
+                <h3 class="text-xl md:text-2xl lg:text-3xl font-bold opacity-0 transition-opacity duration-500 ease-in-out">
+                  Elegant Family Home in Haven
+                </h3>
+                <h2 class="text-sm md:text-md lg:text-lg mt-2 font-medium">📍 Location: Nirvana , Springfield</h2>
+                
+                <ul class="mt-4 space-y-2 text-lg">
+                  <li class="text-[15px] md:text-[18px] lg:text-[18px]">💰 Price: <span class="font-semibold">$350,000</span></li>
+                  <li class="text-[15px] md:text-[18px] lg:text-[18px]">🛏️ Bedrooms: <span class="font-medium">5</span></li>
+                  <li class="text-[15px] md:text-[18px] lg:text-[18px]">🛁 Bathrooms: <span class="font-medium">4</span></li>
+                  <li class="text-[15px] md:text-[18px] lg:text-[18px]">📏 Size: <span class="font-medium">4,500 sq. ft.</span></li>
+                </ul>
+              </div>
+            </div>
+      
+      
+            <div class="panel" style="background-image: url('./assets/img/listing-two.png')">
+              <div class="p-content absolute top-[50%] left-[0%] md:translate-x-[5%] lg:translate-x-[15%] translate-x-[0%] translate-y-[-50%] p-2 text-white opacity-0 transition-opacity duration-500 ease-in-out">
+                <h3 class="text-xl md:text-2xl lg:text-3xl font-bold opacity-0 transition-opacity duration-500 ease-in-out">
+                  Luxurious Waterfront Scenic Villa
+                </h3>
+                <h2 class="text-sm md:text-md lg:text-lg mt-2 font-medium">📍 Location: Green Meadows, Springfield</h2>
+                
+                <ul class="mt-4 space-y-2 text-lg">
+                  <li class="text-[15px] md:text-[18px] lg:text-[18px]">💰 Price: <span class="font-semibold">$450,000</span></li>
+                  <li class="text-[15px] md:text-[18px] lg:text-[18px]">🛏️ Bedrooms: <span class="font-medium">4</span></li>
+                  <li class="text-[15px] md:text-[18px] lg:text-[18px]">🛁 Bathrooms: <span class="font-medium">3</span></li>
+                  <li class="text-[15px] md:text-[18px] lg:text-[18px]">📏 Size: <span class="font-medium">2,500 sq. ft.</span></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="panel" style="background-image: url('./assets/img/listing-three.png')">
+              <div class="p-content absolute top-[50%] left-[0%] md:translate-x-[5%] lg:translate-x-[15%] translate-x-[0%] translate-y-[-50%] p-2 text-white opacity-0 transition-opacity duration-500 ease-in-out">
+                <h3 class="text-xl md:text-2xl lg:text-3xl font-bold opacity-0 transition-opacity duration-500 ease-in-out">
+                  Modern City Skyline Apartment 
+                </h3>
+                <h2 class="text-sm md:text-md lg:text-lg mt-2 font-medium">📍 Location: Mega City, Springfield</h2>
+                
+                <ul class="mt-4 space-y-2 text-lg">
+                  <li class="text-[15px] md:text-[18px] lg:text-[18px]">💰 Price: <span class="font-semibold">$350,000</span></li>
+                  <li class="text-[15px] md:text-[18px] lg:text-[18px]">🛏️ Bedrooms: <span class="font-medium">2</span></li>
+                  <li class="text-[15px] md:text-[18px] lg:text-[18px]">🛁 Bathrooms: <span class="font-medium">2</span></li>
+                  <li class="text-[15px] md:text-[18px] lg:text-[18px]">📏 Size: <span class="font-medium">2,200 sq. ft.</span></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="panel" style="background-image: url('./assets/img/listing-four.png')">
+              <div class="p-content absolute top-[50%] left-[0%] md:translate-x-[5%] lg:translate-x-[15%] translate-x-[0%] translate-y-[-50%] p-2 text-white opacity-0 transition-opacity duration-500 ease-in-out">
+                <h3 class="text-xl md:text-2xl lg:text-3xl font-bold opacity-0 transition-opacity duration-500 ease-in-out">
+                  Cozy Cottage in the Countrysiden
+                </h3>
+                <h2 class="text-sm md:text-md lg:text-lg mt-2 font-medium">📍 Location: South Wind, Springfield</h2>
+                
+                <ul class="mt-4 space-y-2 text-lg">
+                  <li class="text-[15px] md:text-[18px] lg:text-[18px]">💰 Price: <span class="font-semibold">$150,000</span></li>
+                  <li class="text-[15px] md:text-[18px] lg:text-[18px]">🛏️ Bedrooms: <span class="font-medium">3</span></li>
+                  <li class="text-[15px] md:text-[18px] lg:text-[18px]">🛁 Bathrooms: <span class="font-medium">1</span></li>
+                  <li class="text-[15px] md:text-[18px] lg:text-[18px]">📏 Size: <span class="font-medium">2,500 sq. ft.</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- services end -->
+
+
+    <section class="bg-white py-12">
+      <div class="container mx-auto px-4">
+    
+        <section class="splide" id="property" aria-label="Property Slider">
+          <div class="splide__track">
+            <ul class="splide__list">
+              
+              <!-- Slide 1 -->
+              <li class="splide__slide">
+                <div class="flex flex-wrap items-center justify-between gap-x-8">
+                  <div class="w-full md:w-[58%]">
+                    <img src="assets/img/properties.png" alt="Luxury Villa" class="w-full h-auto rounded-lg shadow-md">
+                  </div>
+                  <div class="w-full md:w-[38%] px-6">
+                    <h2 class="text-2xl md:text-3xl font-bold">Luxury Villa - Milan, Italy</h2>
+                    <p class="text-lg mt-2">5BHK modern villa with private pool</p>
+                    <div class="mt-4 flex justify-start gap-x-8">
+                      <div class="text-lg font-semibold">
+                        <p class="text-[40px] pb-2">$2.5<span class="text-[20px]">Cr</span></p>
+                        <p class="text-[20px]">$890/sqft</p>
+                      </div>
+                      <div class="text-lg font-semibold">
+                        <p class="text-[40px] pb-2">2800<span class="text-[20px]">sqft</span></p>
+                        <p class="text-[20px]">Plot Area</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+    
+              <!-- Slide 2 -->
+              <li class="splide__slide">
+                <div class="flex flex-wrap items-center justify-between gap-x-8">
+                  <div class="w-full md:w-[58%]">
+                    <img src="assets/img/properties.png" alt="Penthouse" class="w-full h-auto rounded-lg shadow-md">
+                  </div>
+                  <div class="w-full md:w-[38%] px-6">
+                    <h2 class="text-2xl md:text-3xl font-bold">Penthouse - Rome, Italy</h2>
+                    <p class="text-lg mt-2">Exclusive penthouse with city skyline view</p>
+                    <div class="mt-4 flex justify-start gap-x-8">
+                      <div class="text-lg font-semibold">
+                        <p class="text-[40px] pb-2">$3.8<span class="text-[20px]">Cr</span></p>
+                        <p class="text-[20px]">$1020/sqft</p>
+                      </div>
+                      <div class="text-lg font-semibold">
+                        <p class="text-[40px] pb-2">3200<span class="text-[20px]">sqft</span></p>
+                        <p class="text-[20px]">Plot Area</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+    
+              <!-- Slide 3 -->
+              <li class="splide__slide">
+                <div class="flex flex-wrap items-center justify-between gap-x-8">
+                  <div class="w-full md:w-[58%]">
+                    <img src="assets/img/properties.png" alt="Beach House" class="w-full h-auto rounded-lg shadow-md">
+                  </div>
+                  <div class="w-full md:w-[38%] px-6">
+                    <h2 class="text-2xl md:text-3xl font-bold">Beach House - Amalfi Coast</h2>
+                    <p class="text-lg mt-2">Sea-facing 4BHK with private access to the beach</p>
+                    <div class="mt-4 flex justify-start gap-x-8">
+                      <div class="text-lg font-semibold">
+                        <p class="text-[40px] pb-2">$4.5<span class="text-[20px]">Cr</span></p>
+                        <p class="text-[20px]">$1125/sqft</p>
+                      </div>
+                      <div class="text-lg font-semibold">
+                        <p class="text-[40px] pb-2">4000<span class="text-[20px]">sqft</span></p>
+                        <p class="text-[20px]">Plot Area</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+    
+              <!-- Slide 4 -->
+              <li class="splide__slide">
+                <div class="flex flex-wrap items-center justify-between gap-x-8">
+                  <div class="w-full md:w-[58%]">
+                    <img src="assets/img/properties.png" alt="Farmhouse" class="w-full h-auto rounded-lg shadow-md">
+                  </div>
+                  <div class="w-full md:w-[38%] px-6">
+                    <h2 class="text-2xl md:text-3xl font-bold">Farmhouse - Tuscany, Italy</h2>
+                    <p class="text-lg mt-2">Rustic 6BHK farmhouse with vineyard</p>
+                    <div class="mt-4 flex justify-start gap-x-8">
+                      <div class="text-lg font-semibold">
+                        <p class="text-[40px] pb-2">$5.2<span class="text-[20px]">Cr</span></p>
+                        <p class="text-[20px]">$750/sqft</p>
+                      </div>
+                      <div class="text-lg font-semibold">
+                        <p class="text-[40px] pb-2">7000<span class="text-[20px]">sqft</span></p>
+                        <p class="text-[20px]">Plot Area</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+    
+            </ul>
+          </div>
+        </section>
+    
+        <!-- Progress Bar -->
+        <div class="progress-container w-full max-w-lg h-2 bg-gray-300 rounded-lg mt-4 mx-auto relative">
+          <div id="progress-bar" class="h-2 bg-orange-500 rounded-lg w-0 transition-all duration-500"></div>
+        </div>
+    
+      </div>
+    </section>
+
+
+    <!-- contact us start -->
+    <section id="contact" class="relative">
+      <div class="contact-us">
+          <img src="assets/img/banner-img.png" alt="Banner" class="w-full min-h-full absolute rounded z-0">
+          <div class="flex flex-col lg:flex-row items-center justify-between min-h-screen bg-transparent relative z-10 px-6 lg:px-20 py-10">
+   <!-- Left Content -->
+              <div class="a-part lg:w-1/2 mb-10 lg:mb-0">
+                  <div class="heading text-4xl lg:text-5xl font-semibold mb-8 flex flex-row">
+                      <h2 class="text-white mr-10">Contact Us</h2>
+                      <div class="line w-20 lg:w-40 mt-2 lg:mt-5 h-1 bg-white"></div>
+                  </div>
+  
+                  <h4 class="text-2xl lg:text-3xl font-regular mb-4 text-stone-200">What we actually do</h4>
+                  <p class="text-base lg:text-lg font-regular mb-8 text-stone-300">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel placerat metus, id fringilla neque. 
+                      Donec euismod velit vel massa dignissim, ut placerat lectus ullamcorper.
+                  </p>
+              </div>
+  <!-- Right Form -->
+              <div class="bg-white/20 backdrop-blur-sm px-8 lg:px-20 py-10 lg:py-20 rounded-lg shadow-md w-full max-w-2xl">
+                  <form action="#" method="POST" class="space-y-6">
+                      <div>
+                          <label for="name" class="block text-sm font-medium text-stone-200">Your Name</label>
+                          <input type="text" id="name" name="name" placeholder="Enter your name" required 
+                              class="mt-2 block w-full px-4 py-2 border border-stone-300 text-stone-300 bg-transparent rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+                      </div>
+                      <div>
+                          <label for="email" class="block text-sm font-medium text-stone-200">Email</label>
+                          <input type="email" id="email" name="email" placeholder="Enter your email" required 
+                              class="mt-2 block w-full px-4 py-2 border border-stone-300 text-stone-300 bg-transparent rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+                      </div>
+                      <div>
+                          <label for="message" class="block text-sm font-medium text-stone-200">Message</label>
+                          <textarea id="message" name="message" placeholder="Write your message here" required
+                              class="mt-2 block w-full px-4 py-2 border border-stone-300 text-stone-300 bg-transparent rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm h-20 resize-none"></textarea>
+                      </div>
+                      <div>
+                          <button type="submit" 
+                              class="w-full px-4 py-2 lg:py-4 text-white bg-orange-900 hover:bg-orange-700 duration-300 rounded-md shadow-sm text-sm font-medium focus:outline-none focus:ring-2 focus:ring-orange-500">
+                              Submit
+                          </button>
+                      </div>
+                  </form>
+              </div>
+  
+          </div>
+      </div>
+  </section>
+<!-- contact us end-->
+
+
+
+<!-- footer start -->
+<footer class="bg-gray-900 text-white py-10">
+      <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-6 flex items-center">
+          <!-- Logo & Company Description -->
+          <div>
+              <h3 class="text-2xl font-bold mb-4">Company Logo</h3>
+              <p class="text-gray-400">We are dedicated to providing top-notch services and ensuring customer satisfaction. Your trust drives our passion for excellence.</p>
+          </div>
+          <!-- Quick Links -->
+          <div>
+              <h4 class="text-xl font-semibold mb-4">Quick Links</h4>
+              <ul class="space-y-2 flex flex-row">
+                  
+                  <li><a href="#" class="text-gray-400 hover:text-white mr-6">About Us</a></li>
+                  <li><a href="#" class="text-gray-400 hover:text-white mr-6">Services</a></li>
+                  <li><a href="#" class="text-gray-400 hover:text-white mr-6">Contact</a></li>
+              </ul>
+          </div>
+          <!-- Social Media Icons -->
+          <div>
+              <h4 class="text-xl font-semibold mb-4">Follow Us</h4>
+              <div class="flex space-x-4">
+                  <a href="#" class="text-gray-400 hover:text-white"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 h-6" viewBox="0 0 24 24"><path d="M24 4.56c-.89.39-1.84.65-2.83.77a4.93 4.93 0 002.15-2.72 9.84 9.84 0 01-3.13 1.2 4.92 4.92 0 00-8.38 4.48 13.94 13.94 0 01-10.12-5.14 4.92 4.92 0 001.52 6.56 4.9 4.9 0 01-2.23-.62v.06a4.92 4.92 0 003.95 4.82 4.93 4.93 0 01-2.21.08 4.92 4.92 0 004.6 3.42A9.88 9.88 0 010 21.54a13.94 13.94 0 007.56 2.21c9.05 0 14-7.5 14-14v-.64a9.94 9.94 0 002.44-2.54z" /></svg></a>
+                  <a href="#" class="text-gray-400 hover:text-white"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 h-6" viewBox="0 0 24 24"><path d="M19.5 3H4.5C3.67 3 3 3.67 3 4.5v15c0 .83.67 1.5 1.5 1.5h7.99v-6.57H9.57v-2.58h2.92v-2c0-2.88 1.72-4.45 4.32-4.45 1.24 0 2.31.09 2.62.13v3.04h-1.8c-1.41 0-1.69.67-1.69 1.66v2.05h3.39l-.44 2.58h-2.95V21h5.79c.83 0 1.5-.67 1.5-1.5v-15c0-.83-.67-1.5-1.5-1.5z" /></svg></a>
+                  <a href="#" class="text-gray-400 hover:text-white"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 h-6" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.84 3.87 8.8 8.68 9.8v-6.93H8.9v-2.87h1.78V9.41c0-1.78 1.08-2.75 2.67-2.75.76 0 1.56.14 1.56.14v1.72h-.88c-.87 0-1.14.54-1.14 1.1v1.36h2.31l-.37 2.87h-1.94v6.93C18.13 20.8 22 16.84 22 12c0-5.52-4.48-10-10-10z" /></svg></a>
+              </div>
+          </div>
+      </div>
+      <div class="text-center text-gray-500 mt-8">
+          &copy; 2025 Company Name. All rights reserved.
+      </div>
+  </footer>
+<!-- footer start -->
+    
+    
+
+
+  <!-- <script src="listing-js.js"></script>   -->
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
