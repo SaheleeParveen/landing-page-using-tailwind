@@ -38,9 +38,9 @@ document.addEventListener("DOMContentLoaded", function () {
       rewind: true,
       rewindSpeed: 500,
       breakpoints: {
-        1024: { perPage: 1 },
-        768: { perPage: 1 },
-        400: { perPage: 1 },
+        1024: { perPage: 1, gap: 0 },
+        768: { perPage: 1, gap: 0},
+        400: { perPage: 1, gap: 10 },
       },
     });
   
@@ -55,5 +55,5 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   
     splide.mount();
-  });
-  
+  });
+

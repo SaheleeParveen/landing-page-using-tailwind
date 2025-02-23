@@ -1,22 +1,9 @@
-header {
-    width: 100%;
-    position: relative;
-    top: 0;
-    left: 0;
-    background-color: black;
-    transition: all 0.5s ease-in-out; /* Smooth Transition */
-}
-
 .stickyheader {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Sticky header ka background */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-    transition: all 0.5s ease-in-out; /* Smooth Transition */
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Sticky header ka background */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  transition: all 0.5s ease-in-out; /* Smooth Transition */
 }
-
 
   
 .panel {
@@ -253,7 +240,7 @@ header {
         left: 0;
         width: 100%;
         transform: translateY(-100%);
-        display: flex;
+        display: none;
         justify-content: space-between;
     }
     
@@ -274,12 +261,12 @@ header {
       z-index: 1;
       padding-bottom: 30px;
       position: absolute;
-        top: 50%;
-        left: 0;
-        width: 100%;
-        transform: translateY(-100%);
-        display: flex;
-        justify-content: space-between;
+      top: 50%;
+      left: 0;
+      width: 100%;
+      transform: translateY(-100%);
+      display: none;
+      justify-content: space-between;
         
     }
     #property
@@ -292,6 +279,32 @@ header {
       z-index: 1;
     }
   }
+
+
+  @media (max-width: 768px) {
+    #property
+    .splide__arrows {
+      z-index: 1;
+      padding-bottom: 30px;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 100%;
+      transform: translateY(-100%);
+      display: none;
+      justify-content: space-between;
+        
+    }
+    #property
+    .splide__pagination {
+      bottom: -1.5em;
+      left: 0;
+      padding: 11px 1em;
+      position: absolute;
+      right: 0;
+      z-index:1;
+    }
+  }
 
   
 
